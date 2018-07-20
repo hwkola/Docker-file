@@ -1,6 +1,0 @@
-mkdir /etc/etcd
-vi /etc/etcd/conf.yml
-
-cp /bin/run.sh /bin/run.sh.bak
-echo '' > /bin/run.sh
-vi /bin/run.sh
