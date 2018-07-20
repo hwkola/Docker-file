@@ -1,0 +1,9 @@
+name: ${HOSTNAME}                                                          
+data-dir: /data                                                           
+listen-client-urls: http://${IPADD}:2379,http://127.0.0.1:2379             
+advertise-client-urls: http://${IPADD}:2379,http://127.0.0.1:2379            
+listen-peer-urls: http://${IPADD}:2379:2380                                         
+initial-advertise-peer-urls: http://${IPADD}:2379:2380
+initial-cluster-token: etcd-cluster-token                                       
+initial-cluster-state: new
+# discovery: 
